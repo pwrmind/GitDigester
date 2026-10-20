@@ -5,8 +5,8 @@ date: 2026-10-20
 categories: ai-tool
 ---
 
-### 🚀 Главное за сегодня  
-Пользователь piotyrgashek открыл issue #19165: на Windows с версией Ollama 0.40.6 NVIDIA GPU теперь используют Vulkan вместо CUDA по умолчанию, что приводит к снижению производительности декодирования на ~6%.
+### 🚀 Главное за сегодня
+*Windows: NVIDIA GPUs run via Vulkan instead of CUDA on 0.40.6 with default OLLAMA_VULKAN (~6% decode regression)*
 
-### 🔧 Что еще сделано  
-- Не указано других значимых изменений.
+### 🔧 Что еще сделано
+*Issue #19165 (opened) от piotyrgashek*
