@@ -1,9 +1,16 @@
 {
   "jekyll/jekyll": "17668760993",
-  "ollama/ollama": "17728202539",
+  "ollama/ollama": "17729262551",
   "python/cpython": "17727697844",
   "langchain-ai/langchain": "17727976431",
   "microsoft/autogen": "17720198263",
   "facebook/react": "17728104279",
-  "rust-lang/rust": "17728127097"
+  "rust-lang/rust": "17728127097",
+  "Comfy-Org/ComfyUI": "17729476053",
+  "vllm-project/vllm": "17729597760",
+  "anomalyco/opencode": "17729520708",
+  "MadsLorentzen/ai-job-search": "17729606418",
+  "stablyai/orca": "17729622130",
+  "headroomlabs-ai/headroom": "17729398514",
+  "DietrichGebert/ponytail": "17729603937"
 }
