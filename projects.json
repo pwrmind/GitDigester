@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Jekyll",
+    "repo": "jekyll/jekyll",
+    "category": "static-site-generator",
+    "description": "Blog-aware static site generator in Ruby"
+  },
+  {
+    "name": "Ollama",
+    "repo": "ollama/ollama",
+    "category": "ai-tool",
+    "description": "Get up and running with large language models locally"
+  },
+  {
+    "name": "LangChain",
+    "repo": "langchain-ai/langchain",
+    "category": "ai-framework",
+    "description": "Build context-aware reasoning applications"
+  },
+  {
+    "name": "AutoGen",
+    "repo": "microsoft/autogen",
+    "category": "ai-framework",
+    "description": "A programming framework for agentic AI"
+  },
+  {
+    "name": "React",
+    "repo": "facebook/react",
+    "category": "frontend-library",
+    "description": "The library for web and native user interfaces"
+  },
+  {
+    "name": "Rust",
+    "repo": "rust-lang/rust",
+    "category": "programming-language",
+    "description": "Empowering everyone to build reliable and efficient software"
+  }
+]

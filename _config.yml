@@ -1,0 +1,15 @@
+title: "GitDigester"
+description: "AI-сводка активности open-source проектов"
+url: "https://pwrmind.github.io"
+baseurl: "/GitDigester"
+
+markdown: kramdown
+
+exclude:
+  - main.py
+  - sync_feed.py
+  - pyproject.toml
+  - uv.lock
+  - .python-version
+  - .venv
+  - README.md
