@@ -13,3 +13,4 @@ exclude:
   - .python-version
   - .venv
   - README.md
+  - posts.json
