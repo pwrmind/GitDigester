@@ -1,5 +1,9 @@
 {
   "jekyll/jekyll": "17668760993",
-  "ollama/ollama": "17727535494",
-  "python/cpython": "17727697844"
+  "ollama/ollama": "17728202539",
+  "python/cpython": "17727697844",
+  "langchain-ai/langchain": "17727976431",
+  "microsoft/autogen": "17720198263",
+  "facebook/react": "17728104279",
+  "rust-lang/rust": "17728127097"
 }
