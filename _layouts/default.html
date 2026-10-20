@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }} | {{ site.title }}</title>
 
-  <!-- Иконка сайта (чтобы не было ошибки 404 в консоли) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <!-- Кастомный SVG Favicon (логотип GD с градиентом) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-size='15' font-weight='900' fill='white' text-anchor='middle'%3EGD%3C/text%3E%3C/svg%3E">
 
-  <!-- Tailwind CSS (правильный CDN) -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Alpine.js -->
@@ -22,7 +22,7 @@
     body { font-family: 'Inter', system-ui, sans-serif; }
     .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
 
-    /* Стилизация Markdown-контента без плагина typography */
+    /* Стилизация Markdown-контента */
     .post-content { color: #cbd5e1; line-height: 1.75; font-size: 0.95rem; }
     .post-content > * + * { margin-top: 0.9rem; }
     .post-content h2,
@@ -82,7 +82,7 @@
   <div class="fixed top-0 left-0 right-0 h-64 pointer-events-none -z-10"
        style="background: radial-gradient(ellipse at top, rgba(99,102,241,0.15), transparent 60%);"></div>
 
-  <!-- Шапка: сквозная для всех страниц, Alpine-скоуп локальный -->
+  <!-- Шапка -->
   <header class="border-b border-slate-800/60"
           x-data
           x-init="$store.feed.search = new URLSearchParams(location.search).get('q') || ''">
@@ -122,7 +122,7 @@
     <p class="mono">{{ site.title }} · {{ "now" | date: "%Y" }} · Powered by Ollama locally</p>
   </footer>
 
-  <!-- Регистрация Alpine.store ДО инициализации Alpine -->
+  <!-- Регистрация Alpine.store -->
   <script>
     document.addEventListener('alpine:init', () => {
       Alpine.store('feed', { search: '' });
