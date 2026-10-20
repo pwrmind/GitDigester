@@ -3,8 +3,6 @@ layout: default
 title: Лента
 ---
 
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
 <div x-data="feed" x-init="init()" x-cloak class="max-w-3xl mx-auto">
 
   <!-- Заголовок -->
@@ -72,6 +70,11 @@ title: Лента
       itemsPerPage: 10,
 
       async init() {
+        // Сброс страницы на первую при изменении поискового запроса
+        this.$watch('$store.feed.search', () => {
+          this.currentPage = 1;
+        });
+
         try {
           const response = await fetch('{{ "/posts.json" | relative_url }}');
           this.posts = await response.json();
@@ -112,22 +115,5 @@ title: Лента
         if (this.currentPage < this.totalPages) this.currentPage++;
       }
     }));
-  });
-
-  // Сброс на первую страницу при смене поискового запроса
-  document.addEventListener('alpine:initialized', () => {
-    const feedEl = document.querySelector('[x-data="feed"]');
-    if (!feedEl || !window.Alpine) return;
-    // Alpine реактивность отслеживает store автоматически,
-    // при смене search — filteredPosts пересчитывается,
-    // но currentPage нужно сбрасывать вручную:
-    Alpine.effect(() => {
-      const store = Alpine.store('feed');
-      // обращаемся к search, чтобы effect на него подписался
-      // eslint-disable-next-line no-unused-expressions
-      store.search;
-      const data = Alpine.$data(feedEl);
-      if (data) data.currentPage = 1;
-    });
   });
 </script>
