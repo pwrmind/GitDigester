@@ -4,5 +4,11 @@
     "repo": "jekyll/jekyll",
     "category": "static-site-generator",
     "description": "Blog-aware static site generator in Ruby"
+  },
+  {
+    "name": "Ollama",
+    "repo": "ollama/ollama",
+    "category": "ai-tool",
+    "description": "Get up and running with large language models locally"
   }
 ]
