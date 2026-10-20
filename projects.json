@@ -10,5 +10,11 @@
     "repo": "ollama/ollama",
     "category": "ai-tool",
     "description": "Get up and running with large language models locally"
+  },
+  {
+    "name": "CPython",
+    "repo": "python/cpython",
+    "category": "language",
+    "description": "The Python programming language"
   }
 ]
