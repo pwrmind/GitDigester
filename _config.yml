@@ -1,7 +1,7 @@
 title: "GitDigester"
 description: "AI-сводка активности open-source проектов"
-url: ""
-baseurl: ""
+url: "https://pwrmind.github.io"
+baseurl: "/GitDigester"
 
 markdown: kramdown
 
